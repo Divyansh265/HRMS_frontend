@@ -61,6 +61,7 @@
     flex: 1;
     font-size: 14px;
     font-weight: 500;
+    word-wrap: break-word;
 }
 
 .notification-close {
@@ -82,4 +83,52 @@
 
 .notification-close:hover {
     opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .notification {
+        top: 70px;
+        right: 10px;
+        left: 10px;
+        min-width: auto;
+        max-width: none;
+        padding: 14px 16px;
+    }
+
+    .notification-message {
+        font-size: 13px;
+    }
+
+    .notification-icon {
+        font-size: 18px;
+        width: 22px;
+        height: 22px;
+    }
+
+    .notification-close {
+        font-size: 22px;
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .notification {
+        padding: 12px 14px;
+    }
+
+    .notification-content {
+        gap: 10px;
+    }
+
+    .notification-message {
+        font-size: 12px;
+    }
+
+    .notification-icon {
+        font-size: 16px;
+        width: 20px;
+        height: 20px;
+    }
 }
